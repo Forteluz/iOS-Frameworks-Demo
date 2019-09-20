@@ -17,6 +17,8 @@
 		D5505DDD233365F1001FB382 /* FDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D5505DDA233365F1001FB382 /* FDHelper.m */; };
 		D5505DDE233365F1001FB382 /* FDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5505DDB233365F1001FB382 /* FDBaseViewController.m */; };
 		D5505DE523336671001FB382 /* FDCALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5505DE423336671001FB382 /* FDCALayerViewController.m */; };
+		D5505DFD2334D29B001FB382 /* FDUIApperanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5505DFC2334D29B001FB382 /* FDUIApperanceViewController.m */; };
+		D5505E012334DC39001FB382 /* FDUIGeometryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5505E002334DC39001FB382 /* FDUIGeometryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		D5505DDB233365F1001FB382 /* FDBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDBaseViewController.m; sourceTree = "<group>"; };
 		D5505DE323336671001FB382 /* FDCALayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDCALayerViewController.h; sourceTree = "<group>"; };
 		D5505DE423336671001FB382 /* FDCALayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDCALayerViewController.m; sourceTree = "<group>"; };
+		D5505DFB2334D29B001FB382 /* FDUIApperanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIApperanceViewController.h; sourceTree = "<group>"; };
+		D5505DFC2334D29B001FB382 /* FDUIApperanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIApperanceViewController.m; sourceTree = "<group>"; };
+		D5505DFF2334DC39001FB382 /* FDUIGeometryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIGeometryViewController.h; sourceTree = "<group>"; };
+		D5505E002334DC39001FB382 /* FDUIGeometryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIGeometryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,8 @@
 		D5505DE023336642001FB382 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D5505DFE2334DC02001FB382 /* UIGeometry */,
+				D5505DFA2334D278001FB382 /* UIApperance */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -129,6 +137,24 @@
 				D5505DE423336671001FB382 /* FDCALayerViewController.m */,
 			);
 			path = CALayer;
+			sourceTree = "<group>";
+		};
+		D5505DFA2334D278001FB382 /* UIApperance */ = {
+			isa = PBXGroup;
+			children = (
+				D5505DFB2334D29B001FB382 /* FDUIApperanceViewController.h */,
+				D5505DFC2334D29B001FB382 /* FDUIApperanceViewController.m */,
+			);
+			path = UIApperance;
+			sourceTree = "<group>";
+		};
+		D5505DFE2334DC02001FB382 /* UIGeometry */ = {
+			isa = PBXGroup;
+			children = (
+				D5505DFF2334DC39001FB382 /* FDUIGeometryViewController.h */,
+				D5505E002334DC39001FB382 /* FDUIGeometryViewController.m */,
+			);
+			path = UIGeometry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +233,8 @@
 				D5505DDC233365F1001FB382 /* FDBaseView.m in Sources */,
 				D5505DDD233365F1001FB382 /* FDHelper.m in Sources */,
 				D5505DE523336671001FB382 /* FDCALayerViewController.m in Sources */,
+				D5505DFD2334D29B001FB382 /* FDUIApperanceViewController.m in Sources */,
+				D5505E012334DC39001FB382 /* FDUIGeometryViewController.m in Sources */,
 				D5505DDE233365F1001FB382 /* FDBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

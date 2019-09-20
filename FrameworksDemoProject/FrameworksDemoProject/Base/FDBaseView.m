@@ -19,6 +19,14 @@
     return self;
 }
 
+- (void)drawRect:(CGRect)rect {
+    
+}
+
+- (void)tintColorDidChange {
+    
+}
+
 - (NSString *)description {
     return [NSString stringWithFormat:@"%@, identifier : %@, zIndex:%@",
             [super description],

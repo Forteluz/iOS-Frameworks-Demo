@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FDHelper.h"
 
-@interface FDBaseView : UIView
+@interface FDBaseView : UIView <UIAppearanceContainer>
 
 @property (nonatomic, copy) NSString *identifier;
 
@@ -18,5 +18,7 @@
 @property (nonatomic, copy) void (^tapAction)(void);
 
 - (UIView *)subviewByIdentifier:(NSString *)identifier;
+
+@property (nonatomic, strong) UIColor *highlightColor UI_APPEARANCE_SELECTOR;
 
 @end
