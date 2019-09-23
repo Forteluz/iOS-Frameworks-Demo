@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self p_testLayoutSubview];
+//    [self p_testLayoutSubview];
+    [self p_testLayoutIssueWithIn_iOS13];
 }
 
 #pragma mark - ---| Test LayoutSubview |---
@@ -73,6 +74,27 @@
         ///===============================================
         /// 结论：a, b 都调用了 layoutSubviews
         ///===============================================
+    }];
+}
+
+#pragma mark - ---| 测试 iOS13 相关 Layout 问题 |---
+/*!
+ Issue : 1
+ 在 iOS13 上，如果使用 autolayout 设置大小约束后，在 layoutSubviews 中 setFrame 会导致循环调用 layoutSubviews；
+ */
+- (void)p_testLayoutIssueWithIn_iOS13 {
+    FDBaseView *baby = [self.helper newView:@"baby"];
+    baby.layoutSubviewsBlock = ^(FDBaseView *hi) {
+        hi.frame = CGRectMake(200, 200, 150, 150);
+        NSLog(@"[%@] layoutSubview", hi.identifier);
+    };
+    [self.view addSubview:baby];
+    [baby mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(@200);
+        make.left.right.bottom.equalTo(self.view);
+    }];
+    [self.caser todo:^{
+        [self.view setNeedsLayout];
     }];
 }
 
