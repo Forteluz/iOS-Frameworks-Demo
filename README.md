@@ -1,3 +1,3 @@
 # iOS-Frameworks-Demo
 
-Maintain by Lux & Hanniya ♡
+Maintain by Lux & Hanniya
