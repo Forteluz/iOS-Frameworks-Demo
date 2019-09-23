@@ -19,6 +19,7 @@
 		D5505DE523336671001FB382 /* FDCALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5505DE423336671001FB382 /* FDCALayerViewController.m */; };
 		D5505DFD2334D29B001FB382 /* FDUIApperanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5505DFC2334D29B001FB382 /* FDUIApperanceViewController.m */; };
 		D5505E012334DC39001FB382 /* FDUIGeometryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5505E002334DC39001FB382 /* FDUIGeometryViewController.m */; };
+		D5C6A2842338B38A008C33A6 /* FDUIViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C6A2832338B38A008C33A6 /* FDUIViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		D5505DFC2334D29B001FB382 /* FDUIApperanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIApperanceViewController.m; sourceTree = "<group>"; };
 		D5505DFF2334DC39001FB382 /* FDUIGeometryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIGeometryViewController.h; sourceTree = "<group>"; };
 		D5505E002334DC39001FB382 /* FDUIGeometryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIGeometryViewController.m; sourceTree = "<group>"; };
+		D5C6A2822338B38A008C33A6 /* FDUIViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIViewViewController.h; sourceTree = "<group>"; };
+		D5C6A2832338B38A008C33A6 /* FDUIViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,7 @@
 		D5505DE023336642001FB382 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D5C6A2812338B377008C33A6 /* UIView */,
 				D5505DFE2334DC02001FB382 /* UIGeometry */,
 				D5505DFA2334D278001FB382 /* UIApperance */,
 			);
@@ -155,6 +159,15 @@
 				D5505E002334DC39001FB382 /* FDUIGeometryViewController.m */,
 			);
 			path = UIGeometry;
+			sourceTree = "<group>";
+		};
+		D5C6A2812338B377008C33A6 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				D5C6A2822338B38A008C33A6 /* FDUIViewViewController.h */,
+				D5C6A2832338B38A008C33A6 /* FDUIViewViewController.m */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +245,7 @@
 				D5505DC1233365B7001FB382 /* AppDelegate.m in Sources */,
 				D5505DDC233365F1001FB382 /* FDBaseView.m in Sources */,
 				D5505DDD233365F1001FB382 /* FDHelper.m in Sources */,
+				D5C6A2842338B38A008C33A6 /* FDUIViewViewController.m in Sources */,
 				D5505DE523336671001FB382 /* FDCALayerViewController.m in Sources */,
 				D5505DFD2334D29B001FB382 /* FDUIApperanceViewController.m in Sources */,
 				D5505E012334DC39001FB382 /* FDUIGeometryViewController.m in Sources */,
