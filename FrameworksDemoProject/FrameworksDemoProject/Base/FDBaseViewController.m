@@ -8,23 +8,15 @@
 
 #import "FDBaseViewController.h"
 
+@interface FDBaseViewController()
+@end
 @implementation FDBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-}
-
-
-- (FDBaseView *)newView:(NSString *)identifier {
-    return [self newView:identifier frame:self.view.bounds];
-}
-
-- (FDBaseView *)newView:(NSString *)identifier frame:(CGRect)frame {
-    FDBaseView *one = [FDBaseView new];
-    one.identifier = identifier;
-    one.frame = frame;
-    return one;
+    self.caser = [[FDCaser alloc] init];
+    self.helper = [[FDHelper alloc] init];
 }
 
 @end

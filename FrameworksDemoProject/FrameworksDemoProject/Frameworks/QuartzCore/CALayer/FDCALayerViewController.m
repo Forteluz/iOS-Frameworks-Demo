@@ -24,18 +24,17 @@
 
 - (void)p_testZPosition {
     [self.view addSubview:({
-        UIView *a = [self newView:@"a" frame:CGRectMake(100, 200, 100, 100)];
+        UIView *a = [self.helper newView:@"a" frame:CGRectMake(100, 200, 100, 100)];
         a.backgroundColor = [UIColor redColor]; a;
     })];
-    [self.view addSubview:[self newView:@"b" frame:CGRectMake(120, 220, 100, 100)]];
-    [self.view addSubview:[self newView:@"c" frame:CGRectMake(140, 240, 100, 100)]];
+    [self.view addSubview:[self.helper newView:@"b" frame:CGRectMake(120, 220, 100, 100)]];
+    [self.view addSubview:[self.helper newView:@"c" frame:CGRectMake(140, 240, 100, 100)]];
     [self.view addSubview:({
-        UIView *d = [self newView:@"d" frame:CGRectMake(160, 260, 100, 100)];
+        UIView *d = [self.helper newView:@"d" frame:CGRectMake(160, 260, 100, 100)];
         d.backgroundColor = [UIColor blueColor]; d;
     })];
     
     NSArray *subviews = self.view.subviews;
-    
     NSLog(@"视图层级：%@", subviews);
     /*! => Log
      视图层级：(

@@ -20,6 +20,7 @@
 		D5505DFD2334D29B001FB382 /* FDUIApperanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5505DFC2334D29B001FB382 /* FDUIApperanceViewController.m */; };
 		D5505E012334DC39001FB382 /* FDUIGeometryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5505E002334DC39001FB382 /* FDUIGeometryViewController.m */; };
 		D5C6A2842338B38A008C33A6 /* FDUIViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C6A2832338B38A008C33A6 /* FDUIViewViewController.m */; };
+		D5C6A2872338CCEB008C33A6 /* FDCaser.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C6A2862338CCEB008C33A6 /* FDCaser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		D5505E002334DC39001FB382 /* FDUIGeometryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIGeometryViewController.m; sourceTree = "<group>"; };
 		D5C6A2822338B38A008C33A6 /* FDUIViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIViewViewController.h; sourceTree = "<group>"; };
 		D5C6A2832338B38A008C33A6 /* FDUIViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIViewViewController.m; sourceTree = "<group>"; };
+		D5C6A2852338CCEB008C33A6 /* FDCaser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDCaser.h; sourceTree = "<group>"; };
+		D5C6A2862338CCEB008C33A6 /* FDCaser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDCaser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				D5505DD8233365F1001FB382 /* FDBaseView.m */,
 				D5505DD9233365F1001FB382 /* FDHelper.h */,
 				D5505DDA233365F1001FB382 /* FDHelper.m */,
+				D5C6A2852338CCEB008C33A6 /* FDCaser.h */,
+				D5C6A2862338CCEB008C33A6 /* FDCaser.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 				D5505DCF233365B8001FB382 /* main.m in Sources */,
 				D5505DC1233365B7001FB382 /* AppDelegate.m in Sources */,
 				D5505DDC233365F1001FB382 /* FDBaseView.m in Sources */,
+				D5C6A2872338CCEB008C33A6 /* FDCaser.m in Sources */,
 				D5505DDD233365F1001FB382 /* FDHelper.m in Sources */,
 				D5C6A2842338B38A008C33A6 /* FDUIViewViewController.m in Sources */,
 				D5505DE523336671001FB382 /* FDCALayerViewController.m in Sources */,

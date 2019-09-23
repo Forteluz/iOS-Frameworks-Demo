@@ -6,12 +6,11 @@
 //  Copyright © 2019 Lux. All rights reserved.
 //
 
-#import "FDBaseView.h"
+#import "FDCaser.h"
+#import "FDHelper.h"
 
 @interface FDBaseViewController : UIViewController
-
-- (FDBaseView *)newView:(NSString *)identifier;
-- (FDBaseView *)newView:(NSString *)identifier frame:(CGRect)frame;
-
+@property (nonatomic, strong) FDCaser  *caser;
+@property (nonatomic, strong) FDHelper *helper;
 @end
 

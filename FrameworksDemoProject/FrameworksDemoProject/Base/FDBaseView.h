@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FDHelper.h"
 
 @interface FDBaseView : UIView <UIAppearanceContainer>
 
@@ -16,6 +15,8 @@
 @property (nonatomic, assign) NSUInteger zIndex;
 
 @property (nonatomic, copy) void (^tapAction)(void);
+
+@property (nonatomic, copy) void (^layoutSubviewsBlock)(FDBaseView *hi);
 
 - (UIView *)subviewByIdentifier:(NSString *)identifier;
 

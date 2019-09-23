@@ -12,19 +12,21 @@
 @end
 @implementation FDBaseView
 
+- (void)dealloc {
+    NSLog(@"[%@] dealloc", self.identifier);
+}
+
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     self.identifier = @"FDBaseView";
-    self.backgroundColor = UIRandomColor;
     return self;
 }
 
-- (void)drawRect:(CGRect)rect {
-    
-}
-
-- (void)tintColorDidChange {
-    
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    if (self.layoutSubviewsBlock) {
+        self.layoutSubviewsBlock(self);
+    }
 }
 
 - (NSString *)description {
@@ -41,7 +43,7 @@
         self.layer.shadowOpacity = 1;
     } else {
         self.layer.shadowRadius = 0;
-        self.layer.shadowOpacity = 9;
+        self.layer.shadowOpacity = 0;
     }
 }
 

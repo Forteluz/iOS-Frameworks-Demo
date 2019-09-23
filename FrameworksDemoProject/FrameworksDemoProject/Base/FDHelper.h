@@ -6,8 +6,7 @@
 //  Copyright © 2019 Lux. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+#import "FDBaseView.h"
 
 /*!
  获取一个 RGBA 色
@@ -25,5 +24,9 @@
 
 
 @interface FDHelper : NSObject
+
+- (FDBaseView *)newView:(NSString *)identifier;
+- (FDBaseView *)newView:(NSString *)identifier frame:(CGRect)frame;
+
 @end
 
