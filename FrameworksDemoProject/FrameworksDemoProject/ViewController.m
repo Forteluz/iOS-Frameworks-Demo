@@ -34,7 +34,7 @@
     NSDictionary *UIKit = @
     {
         @"name"  : @"UIKit",
-        @"items" : @[@"UIView",@"UIWindow",@"UIApperance"],
+        @"items" : @[@"UIView",@"UIWindow",@"UIApperance",@"UILabel"],
     };
     NSDictionary *QuartzCore = @
     {

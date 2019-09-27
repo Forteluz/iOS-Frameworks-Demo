@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05C9288F233DB8AC00BC808A /* FDUILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C9288E233DB8AC00BC808A /* FDUILabelViewController.m */; };
 		D2D17D79EF0EC434E97CD713 /* libPods-FrameworksDemoProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAB1E987DDA4A4976A40DEB /* libPods-FrameworksDemoProject.a */; };
 		D5505DC1233365B7001FB382 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5505DC0233365B7001FB382 /* AppDelegate.m */; };
 		D5505DC4233365B7001FB382 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5505DC3233365B7001FB382 /* ViewController.m */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05C9288D233DB8AC00BC808A /* FDUILabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUILabelViewController.h; sourceTree = "<group>"; };
+		05C9288E233DB8AC00BC808A /* FDUILabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUILabelViewController.m; sourceTree = "<group>"; };
 		5CC81D3BE944BC48547FEA33 /* Pods-FrameworksDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworksDemoProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworksDemoProject/Pods-FrameworksDemoProject.release.xcconfig"; sourceTree = "<group>"; };
 		84145FE7263DCF99368C2B2B /* Pods-FrameworksDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworksDemoProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworksDemoProject/Pods-FrameworksDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 		CDAB1E987DDA4A4976A40DEB /* libPods-FrameworksDemoProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrameworksDemoProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05C9288C233DB87200BC808A /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				05C9288D233DB8AC00BC808A /* FDUILabelViewController.h */,
+				05C9288E233DB8AC00BC808A /* FDUILabelViewController.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
 		20BEE3593032F439641DDF1D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +160,7 @@
 		D5505DE023336642001FB382 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				05C9288C233DB87200BC808A /* UILabel */,
 				D5C6A2812338B377008C33A6 /* UIView */,
 				D5505DFE2334DC02001FB382 /* UIGeometry */,
 				D5505DFA2334D278001FB382 /* UIApperance */,
@@ -210,8 +223,6 @@
 				D5505DB8233365B7001FB382 /* Sources */,
 				D5505DB9233365B7001FB382 /* Frameworks */,
 				D5505DBA233365B7001FB382 /* Resources */,
-				6F3FE908CB1D524C9C6A6050 /* [CP] Embed Pods Frameworks */,
-				94C7BA4CAB8C751BA5300080 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,44 +279,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6F3FE908CB1D524C9C6A6050 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrameworksDemoProject/Pods-FrameworksDemoProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		94C7BA4CAB8C751BA5300080 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrameworksDemoProject/Pods-FrameworksDemoProject-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9A0E8FD1307421FD9CE37944 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,6 +315,7 @@
 				D5C6A2872338CCEB008C33A6 /* FDCaser.m in Sources */,
 				D5505DDD233365F1001FB382 /* FDHelper.m in Sources */,
 				D5C6A2842338B38A008C33A6 /* FDUIViewViewController.m in Sources */,
+				05C9288F233DB8AC00BC808A /* FDUILabelViewController.m in Sources */,
 				D5505DE523336671001FB382 /* FDCALayerViewController.m in Sources */,
 				D5505DFD2334D29B001FB382 /* FDUIApperanceViewController.m in Sources */,
 				D5505E012334DC39001FB382 /* FDUIGeometryViewController.m in Sources */,
