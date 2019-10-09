@@ -34,12 +34,12 @@
     NSDictionary *UIKit = @
     {
         @"name"  : @"UIKit",
-        @"items" : @[@"UIView",@"UIWindow",@"UIApperance",@"UILabel"],
+        @"items" : @[@"UIView", @"UIViewAnimation", @"UIWindow", @"UIApperance", @"UILabel"],
     };
     NSDictionary *QuartzCore = @
     {
         @"name"  : @"QuartzCore",
-        @"items" : @[@"CALayer",@"CAAnimation"]
+        @"items" : @[@"CALayer", @"CoreAnimation", @"CAAnimation"]
     };
     self.data = @[
                   UIKit,

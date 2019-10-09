@@ -21,6 +21,8 @@
 		D5505DE523336671001FB382 /* FDCALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5505DE423336671001FB382 /* FDCALayerViewController.m */; };
 		D5505DFD2334D29B001FB382 /* FDUIApperanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5505DFC2334D29B001FB382 /* FDUIApperanceViewController.m */; };
 		D5505E012334DC39001FB382 /* FDUIGeometryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5505E002334DC39001FB382 /* FDUIGeometryViewController.m */; };
+		D554E490234E2F590047657B /* FDUIViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E48F234E2F590047657B /* FDUIViewAnimationViewController.m */; };
+		D554E493234E365D0047657B /* FDCoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E492234E365D0047657B /* FDCoreAnimationViewController.m */; };
 		D5C6A2842338B38A008C33A6 /* FDUIViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C6A2832338B38A008C33A6 /* FDUIViewViewController.m */; };
 		D5C6A2872338CCEB008C33A6 /* FDCaser.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C6A2862338CCEB008C33A6 /* FDCaser.m */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,10 @@
 		D5505DFC2334D29B001FB382 /* FDUIApperanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIApperanceViewController.m; sourceTree = "<group>"; };
 		D5505DFF2334DC39001FB382 /* FDUIGeometryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIGeometryViewController.h; sourceTree = "<group>"; };
 		D5505E002334DC39001FB382 /* FDUIGeometryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIGeometryViewController.m; sourceTree = "<group>"; };
+		D554E48E234E2F590047657B /* FDUIViewAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIViewAnimationViewController.h; sourceTree = "<group>"; };
+		D554E48F234E2F590047657B /* FDUIViewAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIViewAnimationViewController.m; sourceTree = "<group>"; };
+		D554E491234E365D0047657B /* FDCoreAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDCoreAnimationViewController.h; sourceTree = "<group>"; };
+		D554E492234E365D0047657B /* FDCoreAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDCoreAnimationViewController.m; sourceTree = "<group>"; };
 		D5C6A2822338B38A008C33A6 /* FDUIViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIViewViewController.h; sourceTree = "<group>"; };
 		D5C6A2832338B38A008C33A6 /* FDUIViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIViewViewController.m; sourceTree = "<group>"; };
 		D5C6A2852338CCEB008C33A6 /* FDCaser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDCaser.h; sourceTree = "<group>"; };
@@ -171,6 +177,7 @@
 		D5505DE123336648001FB382 /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
+				D554E48C234E2E6F0047657B /* CoreAnimation */,
 				D5505DE223336653001FB382 /* CALayer */,
 			);
 			path = QuartzCore;
@@ -203,9 +210,28 @@
 			path = UIGeometry;
 			sourceTree = "<group>";
 		};
+		D554E48C234E2E6F0047657B /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				D554E491234E365D0047657B /* FDCoreAnimationViewController.h */,
+				D554E492234E365D0047657B /* FDCoreAnimationViewController.m */,
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		D554E48D234E2F3C0047657B /* UIViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				D554E48E234E2F590047657B /* FDUIViewAnimationViewController.h */,
+				D554E48F234E2F590047657B /* FDUIViewAnimationViewController.m */,
+			);
+			path = UIViewAnimation;
+			sourceTree = "<group>";
+		};
 		D5C6A2812338B377008C33A6 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				D554E48D234E2F3C0047657B /* UIViewAnimation */,
 				D5C6A2822338B38A008C33A6 /* FDUIViewViewController.h */,
 				D5C6A2832338B38A008C33A6 /* FDUIViewViewController.m */,
 			);
@@ -318,6 +344,8 @@
 				05C9288F233DB8AC00BC808A /* FDUILabelViewController.m in Sources */,
 				D5505DE523336671001FB382 /* FDCALayerViewController.m in Sources */,
 				D5505DFD2334D29B001FB382 /* FDUIApperanceViewController.m in Sources */,
+				D554E493234E365D0047657B /* FDCoreAnimationViewController.m in Sources */,
+				D554E490234E2F590047657B /* FDUIViewAnimationViewController.m in Sources */,
 				D5505E012334DC39001FB382 /* FDUIGeometryViewController.m in Sources */,
 				D5505DDE233365F1001FB382 /* FDBaseViewController.m in Sources */,
 			);
