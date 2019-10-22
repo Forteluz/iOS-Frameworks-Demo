@@ -1,8 +1,8 @@
 //
-//  FDUIApperanceViewController.h
+//  FDGCDViewController.h
 //  FrameworksDemoProject
 //
-//  Created by Lux on 2019/9/20.
+//  Created by Lux on 2019/10/22.
 //  Copyright © 2019 Lux. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FDUIApperanceViewController : FDBaseViewController
+@interface FDGCDViewController : FDBaseViewController
 
 @end
 
