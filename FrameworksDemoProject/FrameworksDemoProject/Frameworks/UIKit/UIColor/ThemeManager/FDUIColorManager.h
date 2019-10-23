@@ -7,10 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FDUIColor.h"
+#import "UIView+FDUIColor.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
+/*!
+ 一个简单的换肤管理器
+ */
 @interface FDUIColorManager : NSObject
+@property (nonatomic, assign) BOOL isDark;
+
++ (instancetype)sharedInstance;
+- (void)updateTheme:(NSString *)theme;
 
 @end
 
