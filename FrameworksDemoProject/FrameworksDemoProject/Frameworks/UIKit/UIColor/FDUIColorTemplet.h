@@ -6,32 +6,24 @@
 //  Copyright © 2019 Lux. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "FDUIColor.h"
-
-
-#define FDUIVCBackgroundColor     [FDUIColorTemplet fd_viewControllerBackgroundColor]
-#define FDUIButtonBackgroundColor [FDUIColorTemplet fd_buttonBackgrounColor]
-#define FDUIButtonBorderColor     [FDUIColorTemplet fd_buttonBorderColor]
+#import <UIKit/UIKit.h>
 
 /*!
- 主题模板，在模板中配置需要的颜色
+ 通常的主题设计体系中，都会定义一些主题色（如主色，副色，文字色等）
+ */
+#define FDUIPrimaryColor        [FDUIColorTemplet fd_primaryColor]
+#define FDUISecondaryColor      [FDUIColorTemplet fd_secondaryColor]
+#define FDUITextColor           [FDUIColorTemplet fd_textColor]
+#define FDUIBackgroundColor     [FDUIColorTemplet fd_backgrounndColor]
+
+/*!
+ 主题模板，用于解耦组件和主题库之间的依赖关系，同时定义组件的换肤属性
  */
 @interface FDUIColorTemplet : NSObject
 
-/*!
- 定义 VC 的背景色
- */
-+ (UIColor *)fd_viewControllerBackgroundColor;
-
-/*!
- 定义一个组件的背景色
- */
-+ (UIColor *)fd_buttonBackgrounColor;
-
-/*!
- 定义一个组件的边框色
- */
-+ (UIColor *)fd_buttonBorderColor;
++ (UIColor *)fd_primaryColor;
++ (UIColor *)fd_secondaryColor;
++ (UIColor *)fd_textColor;
++ (UIColor *)fd_backgrounndColor;
 
 @end

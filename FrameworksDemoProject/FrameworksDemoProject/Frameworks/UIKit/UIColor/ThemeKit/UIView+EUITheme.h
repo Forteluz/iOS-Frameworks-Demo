@@ -1,5 +1,5 @@
 //
-//  FDUIColorTestView.h
+//  UIView+FDUIColor.h
 //  FrameworksDemoProject
 //
 //  Created by Lux on 2019/10/23.
@@ -10,8 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FDUIColorTestView : UIView
+@interface CALayer (EUITheme)
+- (void)fd_displayIfNeeded;
+@end
 
+@interface UIView (EUITheme)
+- (void)fd_displayIfNeeded;
 @end
 
 NS_ASSUME_NONNULL_END

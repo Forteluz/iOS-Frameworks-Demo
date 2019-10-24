@@ -6,15 +6,16 @@
 //  Copyright © 2019 Lux. All rights reserved.
 //
 
-#import "UIView+FDUIColor.h"
-#import "FDUIColorManager.h"
-#import "FDUIColorMapper.h"
+#import "UIView+EUITheme.h"
+#import "EUIThemeManager.h"
+#import "NSObject+EUITheme.h"
+#import "EUIDynamicAppearance.h"
 #import "FDRuntime.h"
 
 static const void *kFDBackgroundColorKey = &kFDBackgroundColorKey;
 static const void *kFDBorderColorKey = &kFDBorderColorKey;
 
-@implementation CALayer(FDUIColor)
+@implementation CALayer(EUITheme)
 
 - (void)fd_setOriginBackgroundColor:(UIColor *)fd_backgroundColor {
     objc_setAssociatedObject(self, kFDBackgroundColorKey, fd_backgroundColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -45,18 +46,23 @@ static const void *kFDBorderColorKey = &kFDBorderColorKey;
 }
 
 - (void)fd_setBackgroundColor:(CGColorRef)backgroundColor {
-    [self fd_setBackgroundColor:backgroundColor];
-    UIColor *color = [FDUIColorMapper colorByColorRef:backgroundColor];
+    /*!
+     CALayer 绘制的时候使用的是 CGColorRef ，为了触发 FDUIColor 的回调，需要将两者做一个关系绑定
+     */
+    UIColor *color = nil;
+    if (backgroundColor) {
+        color = [(__bridge id)backgroundColor fd_colorByCGColor];
+    }
     [self fd_setOriginBackgroundColor:color];
+    [self fd_setBackgroundColor:backgroundColor];
 }
 
 - (void)fd_setBorderColor:(CGColorRef)borderColor {
     [self fd_setBorderColor:borderColor];
-    UIColor *color = [FDUIColorMapper colorByColorRef:borderColor];
-    [self fd_setOriginBorderColor:color];
+    [self fd_setOriginBorderColor:[(__bridge id)borderColor fd_colorByCGColor]];
 }
 
-- (void)fd_updateColor {
+- (void)fd_displayIfNeeded {
     CGColorRef backgroundColor = [self fd_originBackgroundColor].CGColor;
     if (backgroundColor) {
         self.backgroundColor = backgroundColor;
@@ -69,15 +75,33 @@ static const void *kFDBorderColorKey = &kFDBorderColorKey;
 
 @end
 
-@implementation UIView (FDUIColor)
+@implementation UIView (EUITheme)
 
-- (void)fd_updateColor {
-    [self.layer fd_updateColor];
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [FDRuntime hookClass:UIView.class
+                fromSelector:@selector(setBackgroundColor:)
+                  toSelector:@selector(fd_setBackgroundColor:)];
+    });
+}
+
+- (void)fd_setBackgroundColor:(UIColor *)color {
+    [self.layer setBackgroundColor:nil];
+    [self fd_setBackgroundColor:color];
+}
+
+- (void)fd_displayIfNeeded {
+    ///< 开始调用已注册的 setter
+    [self eui_invokeEUIAppearanceSelectors];
     
     NSArray *subviews = [self subviews];
-    [subviews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [obj fd_updateColor];
+    [subviews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
+        [obj fd_displayIfNeeded];
     }];
+ 
+    ///< 让 layer 重新绘制
+    [self.layer fd_displayIfNeeded];
 }
 
 @end

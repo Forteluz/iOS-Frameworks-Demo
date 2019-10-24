@@ -11,6 +11,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+#define FDSynthesize(_value_, TYPE) \
+
+
+
+
 @interface FDRuntime : NSObject
 
 + (void)hookClass:(Class)classObject fromSelector:(SEL)fromSelector toSelector:(SEL)toSelector;

@@ -7,35 +7,56 @@
 //
 
 #import "FDUIColorViewController.h"
+///< Component
+#import "FDUIColorTestView.h"
+///< Theme
+#import "EUIThemeKit.h"
 #import "FDUIColorTemplet.h"
-#import "FDUIColorManager.h"
+#import "FDUITheme.h"
 
-@implementation FDUIColorViewController
+@implementation FDUIColorViewController {
+    FDUIColorTemplet *_themeTemplet;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    ///< 加载主题
+    [[EUIThemeManager sharedInstance] applyTheme:[FDUIRedTheme new]];
     
+    ///< 配置主题
+    _themeTemplet = [FDUIColorTemplet new];
+    
+    ///< 应用主题
+    [self.view setBackgroundColor:FDUIBackgroundColor];
+    [self p_addButtonComponent];
+    [self p_addTestViewComponent];
+}
+
+#pragma mark - ---| Componentss |---
+
+- (void)p_addButtonComponent {
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     [button setTitle:@"点我切换" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(tapAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
-        
-    ///< 设置 button 的背景色和边框色
-//    button.layer.borderWidth = 1.f;
-//    button.layer.borderColor = FDUIButtonBorderColor.CGColor;
-    button.backgroundColor = FDUIButtonBackgroundColor;
-
-    ///< 设置 view 的背景色
-    self.view.backgroundColor = FDUIVCBackgroundColor;
 }
 
+- (void)p_addTestViewComponent {
+    FDUIColorTestView *one = [[FDUIColorTestView alloc] initWithFrame:CGRectMake(100, 230, 100, 100)];
+    [self.view addSubview:one];
+}
+
+#pragma mark - ---| Action |---
+
 - (void)tapAction {
-    if ([FDUIColorManager sharedInstance].isDark) {
-        NSLog(@"更新为日常主题");
-        [[FDUIColorManager sharedInstance] updateTheme:@"light"];
+    id <EUIThemeProtocol> theme = [EUIThemeManager sharedInstance].currentTheme;
+    if ([theme.identifier isEqualToString:@"red"]) {
+        [[EUIThemeManager sharedInstance] applyTheme:[FDUIBlueTheme new]];
+    } else if ([theme.identifier isEqualToString:@"blue"]) {
+        [[EUIThemeManager sharedInstance] applyTheme:[FDUIRedTheme new]];
     } else {
-        NSLog(@"更新为黑暗主题");
-        [[FDUIColorManager sharedInstance] updateTheme:@"dark"];
+        [[EUIThemeManager sharedInstance] applyTheme:[FDUIBlueTheme new]];
     }
 }
 

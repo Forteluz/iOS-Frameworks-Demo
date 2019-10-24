@@ -10,7 +10,9 @@
 		05C9288F233DB8AC00BC808A /* FDUILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C9288E233DB8AC00BC808A /* FDUILabelViewController.m */; };
 		D2D17D79EF0EC434E97CD713 /* libPods-FrameworksDemoProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAB1E987DDA4A4976A40DEB /* libPods-FrameworksDemoProject.a */; };
 		D53CF7B0236050AE00737462 /* FDUIColorTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CF7AF236050AE00737462 /* FDUIColorTestView.m */; };
-		D53CF7B32360834700737462 /* NSObject+FDUIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CF7B22360834700737462 /* NSObject+FDUIColor.m */; };
+		D53CF7B32360834700737462 /* NSObject+EUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CF7B22360834700737462 /* NSObject+EUITheme.m */; };
+		D53CF7B723618B6E00737462 /* FDUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CF7B623618B6E00737462 /* FDUITheme.m */; };
+		D53CF7BF23619E8A00737462 /* EUIDynamicAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CF7BE23619E8A00737462 /* EUIDynamicAppearance.m */; };
 		D5505DC1233365B7001FB382 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5505DC0233365B7001FB382 /* AppDelegate.m */; };
 		D5505DC4233365B7001FB382 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5505DC3233365B7001FB382 /* ViewController.m */; };
 		D5505DC7233365B7001FB382 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5505DC5233365B7001FB382 /* Main.storyboard */; };
@@ -27,12 +29,11 @@
 		D554E493234E365D0047657B /* FDCoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D554E492234E365D0047657B /* FDCoreAnimationViewController.m */; };
 		D572743E235EAA7A0000F701 /* FDUIColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D572743D235EAA7A0000F701 /* FDUIColorViewController.m */; };
 		D572744B235EF8870000F701 /* FDGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D572744A235EF8870000F701 /* FDGCDViewController.m */; };
-		D572744E235F06D30000F701 /* FDUIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D572744D235F06D30000F701 /* FDUIColor.m */; };
-		D5727454235F34090000F701 /* FDUIColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5727453235F34090000F701 /* FDUIColorManager.m */; };
-		D57274572360018D0000F701 /* UIView+FDUIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D57274562360018D0000F701 /* UIView+FDUIColor.m */; };
+		D572744E235F06D30000F701 /* EUIDynamicColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D572744D235F06D30000F701 /* EUIDynamicColor.m */; };
+		D5727454235F34090000F701 /* EUIThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5727453235F34090000F701 /* EUIThemeManager.m */; };
+		D57274572360018D0000F701 /* UIView+EUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D57274562360018D0000F701 /* UIView+EUITheme.m */; };
 		D572745B23602FAE0000F701 /* FDRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = D572745A23602FAE0000F701 /* FDRuntime.m */; };
 		D572745E236037ED0000F701 /* FDUIColorTemplet.m in Sources */ = {isa = PBXBuildFile; fileRef = D572745D236037ED0000F701 /* FDUIColorTemplet.m */; };
-		D5727462236042460000F701 /* FDUIColorMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D5727461236042460000F701 /* FDUIColorMapper.m */; };
 		D573BAB02356EA9100EB3FAC /* FDUIAppearanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = D573BAAF2356EA9100EB3FAC /* FDUIAppearanceView.m */; };
 		D573BAB323570E1A00EB3FAC /* FDUIAppearanceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D573BAB223570E1A00EB3FAC /* FDUIAppearanceObject.m */; };
 		D5C6A2842338B38A008C33A6 /* FDUIViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C6A2832338B38A008C33A6 /* FDUIViewViewController.m */; };
@@ -47,8 +48,14 @@
 		CDAB1E987DDA4A4976A40DEB /* libPods-FrameworksDemoProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrameworksDemoProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53CF7AE236050AE00737462 /* FDUIColorTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIColorTestView.h; sourceTree = "<group>"; };
 		D53CF7AF236050AE00737462 /* FDUIColorTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIColorTestView.m; sourceTree = "<group>"; };
-		D53CF7B12360834700737462 /* NSObject+FDUIColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+FDUIColor.h"; sourceTree = "<group>"; };
-		D53CF7B22360834700737462 /* NSObject+FDUIColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FDUIColor.m"; sourceTree = "<group>"; };
+		D53CF7B12360834700737462 /* NSObject+EUITheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+EUITheme.h"; sourceTree = "<group>"; };
+		D53CF7B22360834700737462 /* NSObject+EUITheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EUITheme.m"; sourceTree = "<group>"; };
+		D53CF7B523618B6E00737462 /* FDUITheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUITheme.h; sourceTree = "<group>"; };
+		D53CF7B623618B6E00737462 /* FDUITheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUITheme.m; sourceTree = "<group>"; };
+		D53CF7B823618D0900737462 /* EUIThemeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EUIThemeProtocol.h; sourceTree = "<group>"; };
+		D53CF7B92361956200737462 /* EUIThemeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EUIThemeKit.h; sourceTree = "<group>"; };
+		D53CF7BD23619E8A00737462 /* EUIDynamicAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EUIDynamicAppearance.h; sourceTree = "<group>"; };
+		D53CF7BE23619E8A00737462 /* EUIDynamicAppearance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EUIDynamicAppearance.m; sourceTree = "<group>"; };
 		D5505DBC233365B7001FB382 /* FrameworksDemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameworksDemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5505DBF233365B7001FB382 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D5505DC0233365B7001FB382 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -79,18 +86,16 @@
 		D572743D235EAA7A0000F701 /* FDUIColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIColorViewController.m; sourceTree = "<group>"; };
 		D5727449235EF8870000F701 /* FDGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDGCDViewController.h; sourceTree = "<group>"; };
 		D572744A235EF8870000F701 /* FDGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDGCDViewController.m; sourceTree = "<group>"; };
-		D572744C235F06D30000F701 /* FDUIColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIColor.h; sourceTree = "<group>"; };
-		D572744D235F06D30000F701 /* FDUIColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIColor.m; sourceTree = "<group>"; };
-		D5727452235F34090000F701 /* FDUIColorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIColorManager.h; sourceTree = "<group>"; };
-		D5727453235F34090000F701 /* FDUIColorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIColorManager.m; sourceTree = "<group>"; };
-		D57274552360018D0000F701 /* UIView+FDUIColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FDUIColor.h"; sourceTree = "<group>"; };
-		D57274562360018D0000F701 /* UIView+FDUIColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FDUIColor.m"; sourceTree = "<group>"; };
+		D572744C235F06D30000F701 /* EUIDynamicColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EUIDynamicColor.h; sourceTree = "<group>"; };
+		D572744D235F06D30000F701 /* EUIDynamicColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EUIDynamicColor.m; sourceTree = "<group>"; };
+		D5727452235F34090000F701 /* EUIThemeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EUIThemeManager.h; sourceTree = "<group>"; };
+		D5727453235F34090000F701 /* EUIThemeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EUIThemeManager.m; sourceTree = "<group>"; };
+		D57274552360018D0000F701 /* UIView+EUITheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+EUITheme.h"; sourceTree = "<group>"; };
+		D57274562360018D0000F701 /* UIView+EUITheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+EUITheme.m"; sourceTree = "<group>"; };
 		D572745923602FAE0000F701 /* FDRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDRuntime.h; sourceTree = "<group>"; };
 		D572745A23602FAE0000F701 /* FDRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDRuntime.m; sourceTree = "<group>"; };
 		D572745C236037ED0000F701 /* FDUIColorTemplet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIColorTemplet.h; sourceTree = "<group>"; };
 		D572745D236037ED0000F701 /* FDUIColorTemplet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIColorTemplet.m; sourceTree = "<group>"; };
-		D5727460236042460000F701 /* FDUIColorMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIColorMapper.h; sourceTree = "<group>"; };
-		D5727461236042460000F701 /* FDUIColorMapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIColorMapper.m; sourceTree = "<group>"; };
 		D573BAAE2356EA9100EB3FAC /* FDUIAppearanceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIAppearanceView.h; sourceTree = "<group>"; };
 		D573BAAF2356EA9100EB3FAC /* FDUIAppearanceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIAppearanceView.m; sourceTree = "<group>"; };
 		D573BAB123570E1A00EB3FAC /* FDUIAppearanceObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIAppearanceObject.h; sourceTree = "<group>"; };
@@ -274,11 +279,15 @@
 		D572743B235EAA650000F701 /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
-				D572745F236041C30000F701 /* ThemeManager */,
+				D572745F236041C30000F701 /* ThemeKit */,
 				D572743C235EAA7A0000F701 /* FDUIColorViewController.h */,
 				D572743D235EAA7A0000F701 /* FDUIColorViewController.m */,
 				D572745C236037ED0000F701 /* FDUIColorTemplet.h */,
 				D572745D236037ED0000F701 /* FDUIColorTemplet.m */,
+				D53CF7B523618B6E00737462 /* FDUITheme.h */,
+				D53CF7B623618B6E00737462 /* FDUITheme.m */,
+				D53CF7AE236050AE00737462 /* FDUIColorTestView.h */,
+				D53CF7AF236050AE00737462 /* FDUIColorTestView.m */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -301,23 +310,23 @@
 			path = Runtime;
 			sourceTree = "<group>";
 		};
-		D572745F236041C30000F701 /* ThemeManager */ = {
+		D572745F236041C30000F701 /* ThemeKit */ = {
 			isa = PBXGroup;
 			children = (
-				D572744C235F06D30000F701 /* FDUIColor.h */,
-				D572744D235F06D30000F701 /* FDUIColor.m */,
-				D5727452235F34090000F701 /* FDUIColorManager.h */,
-				D5727453235F34090000F701 /* FDUIColorManager.m */,
-				D57274552360018D0000F701 /* UIView+FDUIColor.h */,
-				D57274562360018D0000F701 /* UIView+FDUIColor.m */,
-				D53CF7B12360834700737462 /* NSObject+FDUIColor.h */,
-				D53CF7B22360834700737462 /* NSObject+FDUIColor.m */,
-				D5727460236042460000F701 /* FDUIColorMapper.h */,
-				D5727461236042460000F701 /* FDUIColorMapper.m */,
-				D53CF7AE236050AE00737462 /* FDUIColorTestView.h */,
-				D53CF7AF236050AE00737462 /* FDUIColorTestView.m */,
+				D53CF7B92361956200737462 /* EUIThemeKit.h */,
+				D53CF7B823618D0900737462 /* EUIThemeProtocol.h */,
+				D572744C235F06D30000F701 /* EUIDynamicColor.h */,
+				D572744D235F06D30000F701 /* EUIDynamicColor.m */,
+				D5727452235F34090000F701 /* EUIThemeManager.h */,
+				D5727453235F34090000F701 /* EUIThemeManager.m */,
+				D57274552360018D0000F701 /* UIView+EUITheme.h */,
+				D57274562360018D0000F701 /* UIView+EUITheme.m */,
+				D53CF7B12360834700737462 /* NSObject+EUITheme.h */,
+				D53CF7B22360834700737462 /* NSObject+EUITheme.m */,
+				D53CF7BD23619E8A00737462 /* EUIDynamicAppearance.h */,
+				D53CF7BE23619E8A00737462 /* EUIDynamicAppearance.m */,
 			);
-			path = ThemeManager;
+			path = ThemeKit;
 			sourceTree = "<group>";
 		};
 		D5C6A2812338B377008C33A6 /* UIView */ = {
@@ -467,9 +476,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D53CF7B0236050AE00737462 /* FDUIColorTestView.m in Sources */,
-				D5727462236042460000F701 /* FDUIColorMapper.m in Sources */,
 				D572745B23602FAE0000F701 /* FDRuntime.m in Sources */,
-				D53CF7B32360834700737462 /* NSObject+FDUIColor.m in Sources */,
+				D53CF7B32360834700737462 /* NSObject+EUITheme.m in Sources */,
 				D573BAB323570E1A00EB3FAC /* FDUIAppearanceObject.m in Sources */,
 				D5505DC4233365B7001FB382 /* ViewController.m in Sources */,
 				D5505DCF233365B8001FB382 /* main.m in Sources */,
@@ -480,18 +488,20 @@
 				D5505DDD233365F1001FB382 /* FDHelper.m in Sources */,
 				D5C6A2842338B38A008C33A6 /* FDUIViewViewController.m in Sources */,
 				05C9288F233DB8AC00BC808A /* FDUILabelViewController.m in Sources */,
-				D57274572360018D0000F701 /* UIView+FDUIColor.m in Sources */,
+				D53CF7B723618B6E00737462 /* FDUITheme.m in Sources */,
+				D57274572360018D0000F701 /* UIView+EUITheme.m in Sources */,
 				D5505DE523336671001FB382 /* FDCALayerViewController.m in Sources */,
+				D53CF7BF23619E8A00737462 /* EUIDynamicAppearance.m in Sources */,
 				D572744B235EF8870000F701 /* FDGCDViewController.m in Sources */,
 				D573BAB02356EA9100EB3FAC /* FDUIAppearanceView.m in Sources */,
 				D5505DFD2334D29B001FB382 /* FDUIAppearanceViewController.m in Sources */,
-				D572744E235F06D30000F701 /* FDUIColor.m in Sources */,
+				D572744E235F06D30000F701 /* EUIDynamicColor.m in Sources */,
 				D554E493234E365D0047657B /* FDCoreAnimationViewController.m in Sources */,
 				D554E490234E2F590047657B /* FDUIViewAnimationViewController.m in Sources */,
 				D5505E012334DC39001FB382 /* FDUIGeometryViewController.m in Sources */,
 				D572745E236037ED0000F701 /* FDUIColorTemplet.m in Sources */,
 				D5505DDE233365F1001FB382 /* FDBaseViewController.m in Sources */,
-				D5727454235F34090000F701 /* FDUIColorManager.m in Sources */,
+				D5727454235F34090000F701 /* EUIThemeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
