@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052440D3236835A400213CCD /* FDUIResponderSuperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 052440D2236835A400213CCD /* FDUIResponderSuperView.m */; };
+		052440D62368362300213CCD /* FDUIResponderSubAView.m in Sources */ = {isa = PBXBuildFile; fileRef = 052440D52368362300213CCD /* FDUIResponderSubAView.m */; };
+		052440D92368363A00213CCD /* FDUIResponderSubBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 052440D82368363A00213CCD /* FDUIResponderSubBView.m */; };
+		05A9E46C23682EB300CC5C84 /* FDUIResponderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A9E46B23682EB300CC5C84 /* FDUIResponderViewController.m */; };
 		05C9288F233DB8AC00BC808A /* FDUILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C9288E233DB8AC00BC808A /* FDUILabelViewController.m */; };
+		05F7EC2523696FDD00ED5167 /* FDUIPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F7EC2423696FDD00ED5167 /* FDUIPanGestureRecognizer.m */; };
+		05F7EC2823699C5300ED5167 /* FDUITapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F7EC2723699C5200ED5167 /* FDUITapGestureRecognizer.m */; };
 		D2D17D79EF0EC434E97CD713 /* libPods-FrameworksDemoProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAB1E987DDA4A4976A40DEB /* libPods-FrameworksDemoProject.a */; };
 		D53CF7B0236050AE00737462 /* FDUIColorTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CF7AF236050AE00737462 /* FDUIColorTestView.m */; };
 		D53CF7B32360834700737462 /* NSObject+EUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CF7B22360834700737462 /* NSObject+EUITheme.m */; };
@@ -41,8 +47,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		052440D1236835A400213CCD /* FDUIResponderSuperView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIResponderSuperView.h; sourceTree = "<group>"; };
+		052440D2236835A400213CCD /* FDUIResponderSuperView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIResponderSuperView.m; sourceTree = "<group>"; };
+		052440D42368362300213CCD /* FDUIResponderSubAView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIResponderSubAView.h; sourceTree = "<group>"; };
+		052440D52368362300213CCD /* FDUIResponderSubAView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIResponderSubAView.m; sourceTree = "<group>"; };
+		052440D72368363A00213CCD /* FDUIResponderSubBView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIResponderSubBView.h; sourceTree = "<group>"; };
+		052440D82368363A00213CCD /* FDUIResponderSubBView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIResponderSubBView.m; sourceTree = "<group>"; };
+		05A9E46A23682EB300CC5C84 /* FDUIResponderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIResponderViewController.h; sourceTree = "<group>"; };
+		05A9E46B23682EB300CC5C84 /* FDUIResponderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIResponderViewController.m; sourceTree = "<group>"; };
 		05C9288D233DB8AC00BC808A /* FDUILabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUILabelViewController.h; sourceTree = "<group>"; };
 		05C9288E233DB8AC00BC808A /* FDUILabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUILabelViewController.m; sourceTree = "<group>"; };
+		05F7EC2323696FDD00ED5167 /* FDUIPanGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIPanGestureRecognizer.h; sourceTree = "<group>"; };
+		05F7EC2423696FDD00ED5167 /* FDUIPanGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIPanGestureRecognizer.m; sourceTree = "<group>"; };
+		05F7EC2623699C5200ED5167 /* FDUITapGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUITapGestureRecognizer.h; sourceTree = "<group>"; };
+		05F7EC2723699C5200ED5167 /* FDUITapGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUITapGestureRecognizer.m; sourceTree = "<group>"; };
 		5CC81D3BE944BC48547FEA33 /* Pods-FrameworksDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworksDemoProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworksDemoProject/Pods-FrameworksDemoProject.release.xcconfig"; sourceTree = "<group>"; };
 		84145FE7263DCF99368C2B2B /* Pods-FrameworksDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworksDemoProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworksDemoProject/Pods-FrameworksDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 		CDAB1E987DDA4A4976A40DEB /* libPods-FrameworksDemoProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrameworksDemoProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +136,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05A9E46923682E0800CC5C84 /* UIResponder */ = {
+			isa = PBXGroup;
+			children = (
+				05A9E46A23682EB300CC5C84 /* FDUIResponderViewController.h */,
+				05A9E46B23682EB300CC5C84 /* FDUIResponderViewController.m */,
+				052440D1236835A400213CCD /* FDUIResponderSuperView.h */,
+				052440D2236835A400213CCD /* FDUIResponderSuperView.m */,
+				052440D42368362300213CCD /* FDUIResponderSubAView.h */,
+				052440D52368362300213CCD /* FDUIResponderSubAView.m */,
+				052440D72368363A00213CCD /* FDUIResponderSubBView.h */,
+				052440D82368363A00213CCD /* FDUIResponderSubBView.m */,
+				05F7EC2323696FDD00ED5167 /* FDUIPanGestureRecognizer.h */,
+				05F7EC2423696FDD00ED5167 /* FDUIPanGestureRecognizer.m */,
+				05F7EC2623699C5200ED5167 /* FDUITapGestureRecognizer.h */,
+				05F7EC2723699C5200ED5167 /* FDUITapGestureRecognizer.m */,
+			);
+			path = UIResponder;
+			sourceTree = "<group>";
+		};
 		05C9288C233DB87200BC808A /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +246,7 @@
 		D5505DE023336642001FB382 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				05A9E46923682E0800CC5C84 /* UIResponder */,
 				D572743B235EAA650000F701 /* UIColor */,
 				05C9288C233DB87200BC808A /* UILabel */,
 				D5C6A2812338B377008C33A6 /* UIView */,
@@ -350,8 +388,6 @@
 				D5505DB8233365B7001FB382 /* Sources */,
 				D5505DB9233365B7001FB382 /* Frameworks */,
 				D5505DBA233365B7001FB382 /* Resources */,
-				73262C06A98C25E0882F22F5 /* [CP] Embed Pods Frameworks */,
-				D248A4C6EB5C0D277144D313 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -408,25 +444,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		73262C06A98C25E0882F22F5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrameworksDemoProject/Pods-FrameworksDemoProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9A0E8FD1307421FD9CE37944 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -449,25 +466,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D248A4C6EB5C0D277144D313 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrameworksDemoProject/Pods-FrameworksDemoProject-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -477,9 +475,11 @@
 			files = (
 				D53CF7B0236050AE00737462 /* FDUIColorTestView.m in Sources */,
 				D572745B23602FAE0000F701 /* FDRuntime.m in Sources */,
+				05F7EC2823699C5300ED5167 /* FDUITapGestureRecognizer.m in Sources */,
 				D53CF7B32360834700737462 /* NSObject+EUITheme.m in Sources */,
 				D573BAB323570E1A00EB3FAC /* FDUIAppearanceObject.m in Sources */,
 				D5505DC4233365B7001FB382 /* ViewController.m in Sources */,
+				05A9E46C23682EB300CC5C84 /* FDUIResponderViewController.m in Sources */,
 				D5505DCF233365B8001FB382 /* main.m in Sources */,
 				D5505DC1233365B7001FB382 /* AppDelegate.m in Sources */,
 				D572743E235EAA7A0000F701 /* FDUIColorViewController.m in Sources */,
@@ -493,10 +493,14 @@
 				D5505DE523336671001FB382 /* FDCALayerViewController.m in Sources */,
 				D53CF7BF23619E8A00737462 /* EUIDynamicAppearance.m in Sources */,
 				D572744B235EF8870000F701 /* FDGCDViewController.m in Sources */,
+				05F7EC2523696FDD00ED5167 /* FDUIPanGestureRecognizer.m in Sources */,
 				D573BAB02356EA9100EB3FAC /* FDUIAppearanceView.m in Sources */,
+				052440D62368362300213CCD /* FDUIResponderSubAView.m in Sources */,
 				D5505DFD2334D29B001FB382 /* FDUIAppearanceViewController.m in Sources */,
 				D572744E235F06D30000F701 /* EUIDynamicColor.m in Sources */,
 				D554E493234E365D0047657B /* FDCoreAnimationViewController.m in Sources */,
+				052440D3236835A400213CCD /* FDUIResponderSuperView.m in Sources */,
+				052440D92368363A00213CCD /* FDUIResponderSubBView.m in Sources */,
 				D554E490234E2F590047657B /* FDUIViewAnimationViewController.m in Sources */,
 				D5505E012334DC39001FB382 /* FDUIGeometryViewController.m in Sources */,
 				D572745E236037ED0000F701 /* FDUIColorTemplet.m in Sources */,

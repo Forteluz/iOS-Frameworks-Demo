@@ -16,8 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self p_testLayoutSubview];
-    [self p_testLayoutIssueWithIn_iOS13];
+    ///> Test 1 : layoutSubviews 的调用时机
+    [self p_testLayoutSubview];
+    ///> Test 2 : iOS13 上 autolayout+setFrame 导致循环调用问题
+//    [self p_testLayoutIssueWithIn_iOS13];
 }
 
 #pragma mark - ---| Test LayoutSubview |---
