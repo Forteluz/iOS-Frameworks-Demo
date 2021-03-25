@@ -34,7 +34,14 @@
     NSDictionary *UIKit = @
     {
         @"name"  : @"UIKit",
-        @"items" : @[@"UIView", @"UIViewAnimation", @"UIWindow", @"UIAppearance", @"UILabel", @"UIColor", @"UIResponder"],
+        @"items" : @[@"UIView",
+                     @"UIViewAnimation",
+                     @"UIWindow",
+                     @"UIAppearance",
+                     @"UILabel",
+                     @"UIColor",
+                     @"UIResponder",
+                     @"UIScrollView"],
     };
     NSDictionary *QuartzCore = @
     {

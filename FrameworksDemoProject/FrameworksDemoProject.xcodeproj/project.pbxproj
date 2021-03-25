@@ -10,6 +10,8 @@
 		052440D3236835A400213CCD /* FDUIResponderSuperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 052440D2236835A400213CCD /* FDUIResponderSuperView.m */; };
 		052440D62368362300213CCD /* FDUIResponderSubAView.m in Sources */ = {isa = PBXBuildFile; fileRef = 052440D52368362300213CCD /* FDUIResponderSubAView.m */; };
 		052440D92368363A00213CCD /* FDUIResponderSubBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 052440D82368363A00213CCD /* FDUIResponderSubBView.m */; };
+		053EC646238B86E0002625A3 /* FDUIScrollViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053EC645238B86E0002625A3 /* FDUIScrollViewViewController.m */; };
+		057F3A112508F685007A2BF7 /* FDUILoadingAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 057F3A102508F685007A2BF7 /* FDUILoadingAnimationView.m */; };
 		05A9E46C23682EB300CC5C84 /* FDUIResponderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A9E46B23682EB300CC5C84 /* FDUIResponderViewController.m */; };
 		05C9288F233DB8AC00BC808A /* FDUILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C9288E233DB8AC00BC808A /* FDUILabelViewController.m */; };
 		05F7EC2523696FDD00ED5167 /* FDUIPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F7EC2423696FDD00ED5167 /* FDUIPanGestureRecognizer.m */; };
@@ -53,6 +55,10 @@
 		052440D52368362300213CCD /* FDUIResponderSubAView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIResponderSubAView.m; sourceTree = "<group>"; };
 		052440D72368363A00213CCD /* FDUIResponderSubBView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIResponderSubBView.h; sourceTree = "<group>"; };
 		052440D82368363A00213CCD /* FDUIResponderSubBView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIResponderSubBView.m; sourceTree = "<group>"; };
+		053EC644238B86E0002625A3 /* FDUIScrollViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIScrollViewViewController.h; sourceTree = "<group>"; };
+		053EC645238B86E0002625A3 /* FDUIScrollViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIScrollViewViewController.m; sourceTree = "<group>"; };
+		057F3A0F2508F685007A2BF7 /* FDUILoadingAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUILoadingAnimationView.h; sourceTree = "<group>"; };
+		057F3A102508F685007A2BF7 /* FDUILoadingAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUILoadingAnimationView.m; sourceTree = "<group>"; };
 		05A9E46A23682EB300CC5C84 /* FDUIResponderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUIResponderViewController.h; sourceTree = "<group>"; };
 		05A9E46B23682EB300CC5C84 /* FDUIResponderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUIResponderViewController.m; sourceTree = "<group>"; };
 		05C9288D233DB8AC00BC808A /* FDUILabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUILabelViewController.h; sourceTree = "<group>"; };
@@ -136,6 +142,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		055D4E6E238A66790009B09F /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				053EC644238B86E0002625A3 /* FDUIScrollViewViewController.h */,
+				053EC645238B86E0002625A3 /* FDUIScrollViewViewController.m */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
 		05A9E46923682E0800CC5C84 /* UIResponder */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,9 +261,11 @@
 		D5505DE023336642001FB382 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				055D4E6E238A66790009B09F /* UIScrollView */,
 				05A9E46923682E0800CC5C84 /* UIResponder */,
 				D572743B235EAA650000F701 /* UIColor */,
 				05C9288C233DB87200BC808A /* UILabel */,
+				D554E48D234E2F3C0047657B /* UIViewAnimation */,
 				D5C6A2812338B377008C33A6 /* UIView */,
 				D5505DFE2334DC02001FB382 /* UIGeometry */,
 				D5505DFA2334D278001FB382 /* UIApperance */,
@@ -310,6 +327,8 @@
 			children = (
 				D554E48E234E2F590047657B /* FDUIViewAnimationViewController.h */,
 				D554E48F234E2F590047657B /* FDUIViewAnimationViewController.m */,
+				057F3A0F2508F685007A2BF7 /* FDUILoadingAnimationView.h */,
+				057F3A102508F685007A2BF7 /* FDUILoadingAnimationView.m */,
 			);
 			path = UIViewAnimation;
 			sourceTree = "<group>";
@@ -370,7 +389,6 @@
 		D5C6A2812338B377008C33A6 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				D554E48D234E2F3C0047657B /* UIViewAnimation */,
 				D5C6A2822338B38A008C33A6 /* FDUIViewViewController.h */,
 				D5C6A2832338B38A008C33A6 /* FDUIViewViewController.m */,
 			);
@@ -489,6 +507,7 @@
 				D5C6A2842338B38A008C33A6 /* FDUIViewViewController.m in Sources */,
 				05C9288F233DB8AC00BC808A /* FDUILabelViewController.m in Sources */,
 				D53CF7B723618B6E00737462 /* FDUITheme.m in Sources */,
+				053EC646238B86E0002625A3 /* FDUIScrollViewViewController.m in Sources */,
 				D57274572360018D0000F701 /* UIView+EUITheme.m in Sources */,
 				D5505DE523336671001FB382 /* FDCALayerViewController.m in Sources */,
 				D53CF7BF23619E8A00737462 /* EUIDynamicAppearance.m in Sources */,
@@ -502,6 +521,7 @@
 				052440D3236835A400213CCD /* FDUIResponderSuperView.m in Sources */,
 				052440D92368363A00213CCD /* FDUIResponderSubBView.m in Sources */,
 				D554E490234E2F590047657B /* FDUIViewAnimationViewController.m in Sources */,
+				057F3A112508F685007A2BF7 /* FDUILoadingAnimationView.m in Sources */,
 				D5505E012334DC39001FB382 /* FDUIGeometryViewController.m in Sources */,
 				D572745E236037ED0000F701 /* FDUIColorTemplet.m in Sources */,
 				D5505DDE233365F1001FB382 /* FDBaseViewController.m in Sources */,
@@ -648,16 +668,18 @@
 			baseConfigurationReference = 84145FE7263DCF99368C2B2B /* Pods-FrameworksDemoProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6F8U7MRLT2;
+				DEVELOPMENT_TEAM = 4VS42FY4KS;
 				INFOPLIST_FILE = FrameworksDemoProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.didichuxing.FrameworksDemoProject;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangyihan-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -667,16 +689,18 @@
 			baseConfigurationReference = 5CC81D3BE944BC48547FEA33 /* Pods-FrameworksDemoProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6F8U7MRLT2;
+				DEVELOPMENT_TEAM = 4VS42FY4KS;
 				INFOPLIST_FILE = FrameworksDemoProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.didichuxing.FrameworksDemoProject;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangyihan-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
